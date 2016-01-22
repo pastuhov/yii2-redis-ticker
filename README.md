@@ -30,6 +30,19 @@ $tickerName = 'tak';
 if ($ticker->tick($tickerName, 15)) {
 	$value++;
 }
+// value = 1
+
+if ($ticker->tick($tickerName, 15)) {
+	$value++;
+}
+// value = 1
+
+sleep(20);
+
+if ($ticker->tick($tickerName, 15)) {
+	$value++;
+}
+// value = 3
 ```
 
 ## Testing
